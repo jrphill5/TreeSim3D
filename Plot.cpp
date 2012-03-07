@@ -14,7 +14,8 @@ Plot* Plot::CreateInstance()
 Plot::Plot()
 {
 
-	gnuplot = popen("gnuplot -geometry 600x600 - > /dev/null 2>&1","w");
+	//gnuplot = popen("gnuplot -geometry 600x600 - > /dev/null 2>&1","w");
+	gnuplot = popen("gnuplot -geometry 600x600 -","w");
 	//write("set term postscript eps color");
 	//write("set xlabel \"x\" offset first 3,0,0");
 	write("set xrange[-3:3]");
